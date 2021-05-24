@@ -1,0 +1,220 @@
+﻿
+@{
+    ViewBag.Title = "Iletisim";
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/colorlib-regform-15/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/colorlib-regform-15/css/style.css">
+    <style>
+        body {
+            background-color: #d8d8d8;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .social-menu ul {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+            .social-menu ul li {
+                list-style: none;
+                margin: 0 10px;
+            }
+
+                .social-menu ul li .fa {
+                    color: #000000;
+                    font-size: 25px;
+                    line-height: 50px;
+                    transition: .5s;
+                }
+
+                    .social-menu ul li .fa:hover {
+                        color: #ffffff;
+                    }
+
+                .social-menu ul li a {
+                    position: relative;
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: white;
+                    text-align: center;
+                    transition: 0.5s;
+                    transform: translate(0,0px);
+                    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+                }
+
+                    .social-menu ul li a:hover {
+                        transform: rotate(0deg) skew(0deg) translate(0, -10px);
+                    }
+
+                .social-menu ul li:nth-child(1) a:hover {
+                    background-color: #3b5999;
+                }
+
+                .social-menu ul li:nth-child(2) a:hover {
+                    background-color: #55acee;
+                }
+
+                .social-menu ul li:nth-child(3) a:hover {
+                    background-color: #e4405f;
+                }
+
+                .social-menu ul li:nth-child(4) a:hover {
+                    background-color: #cd201f;
+                }
+
+                .social-menu ul li:nth-child(5) a:hover {
+                    background-color: #0077B5;
+                }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Genel Merkezimiz</h1>
+        <div class="container">
+            <div class="signup-content">
+                <div class="col-md-5 d-flex align-items-stretch">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.666865662681!2d31.16968731477954!3d40.90112193396197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409da1cde227cb83%3A0x1e4b2a94df855b8c!2sSETINT%20AI%20Robotic%20Sistem%20E%C4%9Fitim%20ve%20Dan%C4%B1%C5%9Fmanl%C4%B1k%20San.%20ve%20Tic.%20A.%C5%9E.!5e0!3m2!1str!2str!4v1621061056230!5m2!1str!2str" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <form method="POST" class="register-form" id="register-form">
+
+                    <h2>İletişim Formu</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="adi">İsim :</label>
+                            <input type="text" name="adi" id="adi" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="soyadi">Soyisim :</label>
+                            <input type="text" name="soyadi" id="soyadi" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="Mail">E-posta :</label>
+                            <input type="email" name="Mail" id="Mail" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Telefon">Telefon :</label>
+                            <input type="number" name="Telefon" id="Telefon" required />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="konu">konu :</label>
+                        <select name="konu" required>
+                            <option value=""></option>
+                            <option>Robot Hemşire - Servis</option>
+                            <option>Robot Hemşire - Yoğun Bakım</option>
+                            <option> Robot Hemşire - UVC-Robot</option>
+                            <option>Evde Bakım Robotu</option>
+                            <option> Akıllı Saat</option>
+                            <option> Akıllı Ayna</option>
+                            <option>Akıllı Hasta Servisi</option>
+                            <option> AI - Evde Bakım Sistemi</option>
+                            <option>AI - Dermotoloji</option>
+                            <option>AI - Ortopedi</option>
+                            <option>AI - Akciğer</option>
+                            <option>Wifi - AiOT</option>
+                            <option>Teknik Destek</option>
+                            <option>Bayilik</option>
+                            <option>ihracat</option>
+                            <option>İş Başvurusu</option>
+                            <option>Stajyer Başvurusu</option>
+                            <option> Etkinlik</option>
+                            <option>Robot Hemşire Demo Talep</option>
+                            <option>Diğer</option>
+                        </select>
+                        <div class="form-group">
+                            <label for="mesaj">Mesajınız:</label>
+                            <textarea type="text" name="mesaj" id="mesaj" rows="10" cols="80" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-check">
+                            <input type="checkbox" name="kabul" id="agree-term" class="agree-term" required />
+                            <label for="kabul" class="label-agree-term">
+                                <span><span></span></span>SETİNT AI Tbbi sorumluluk reddini kabul ediyorum.
+                            </label>
+                            <input type="checkbox" name="agree-term" id="kabul" class="agree-term" required />
+                            <label for="kabul" class="label-agree-term">
+                                <span><span></span></span>SETİNT AI KVKK Poitikasını kabul ediyorum.
+                            </label>
+
+                        </div>
+
+                    </div>
+                    <div class="form-submit">
+                        <input type="reset" value="Temizle" class="submit" name="reset" id="reset" />
+                        <input type="submit" value="Kaydet" class="submit" name="submit" id="submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <h1>Ar-Ge Merkezimiz</h1>
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="col-md-5 d-flex align-items-stretch">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d48188.45254532254!2d27.517667059881703!3d40.98633555142095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zdGVraXJkYcSfIHJla3TDtnJsw7zEn8O8IGhhcml0YQ!5e0!3m2!1str!2str!4v1621789304144!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                </div>
+                <div class="signup-form">
+                    <div class="social-menu">
+                        <h1>Bize Ulaşın</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Tele-Sa%C4%9Fl%C4%B1k-101662065336818"><img src="~/colorlib-regform-15/images/facebook-5222.png" /></a></li>
+                            <li><a href="https://twitter.com/RobotDoctorai"><img src="~/colorlib-regform-15/images/twitter-2170.png" /></a></li>
+                            <li><a href="https://www.instagram.com/setintrd/"><img src="~/colorlib-regform-15/images/instagram-logo-3289.png" /></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCAXk8uQ2-pdOoAAJ-4i0yIA"><img src="~/colorlib-regform-15/images/youtube-2176.png" /></a></li>
+                            <li><a href="https://www.linkedin.com/company/setintai/mycompany/"><img src="~/colorlib-regform-15/images/linkedin-2166.png" /></a></li>
+                            <li><a href="mailto:iletisim@setint.com.tr"><img src="~/colorlib-regform-15/images/mail-symbol-3003 .png" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="~/colorlib-regform-15/vendor/jquery/jquery.min.js"></script>
+    <script src="~/colorlib-regform-15/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+
+
+

@@ -1,0 +1,152 @@
+﻿
+@{
+    ViewBag.Title = "UyeEkle";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/colorlib-regform-15/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/colorlib-regform-15/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="~/colorlib-regform-15/images/uye.jpg" alt="">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>Setint AI Üyelik Formu</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="adi">İsim :</label>
+                                <input type="text" name="adi" id="adi" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="soyadi">Soyisim :</label>
+                                <input type="text" name="soyadi" id="soyadi" required />
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="kadi">Kullanıcı Adı :</label>
+                                <input type="text" name="kadi" id="kadi" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="sifre">Şifre :</label>
+                                <input type="password" name="sifre" id="sifre" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+
+                                <label for="telefon">Telefon :</label>
+                                <input type="number" name="telefon" id="telefon" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="mail">E-posta :</label>
+                                <input type="email" name="mail" id="mail" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="adres">Adres :</label>
+                                <input type="text" name="adres" id="adres" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="il">Sehir :</label>
+                                <input type="text" name="il" id="il" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sdurum">Sağlık Durumu :</label>
+                                <div class="form-group">
+                                    <select name="sdurum" id="sdurum" required>
+                                        <option value=""></option>
+                                        <option>Hasta</option>
+                                        <option>Sağlıklı</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="from-group">
+                                <label for="uyeliktipi">Üyelik Tipi :</label>
+                                <div class="from-group">
+                                    <select name="uyeliktipi" id="uyeliktipi" required>
+                                        <option value=""></option>
+                                        <option>Standart üyelik aylık 50 TL</option>
+
+                                        <option>Mobil üyelik aylık 75 TL</option>
+
+                                        <option>Smartwatch üyelik aylık 100 TL</option>
+
+                                        <option>iOT üyelik aylık 150 TL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="boy">Boy :</label>
+                                <input type="number" name="boy" id="boy" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="kilo">Kilo :</label>
+                                <input type="number" name="kilo" id="kilo" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fotograf">Profil Fotoğrafı :</label>
+                                <input type="file" name="fotograf" id="fotograf" accept="image/*" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="dtarihi">Doğum Tarihi :</label>
+                                <input type="date" name="dtarihi" id="dtarihi" required />
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+
+                            <label for="agree-term" class="label-agree-term">SETİNT AI KVKK Poitikasını kabul ediyorum.</label>
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                            <label for="agree-term" class="label-agree-term">SETİNT AI Tbbi sorumluluk reddini kabul ediyorum.</label>
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+
+                        </div>
+                        <div class="form-submit">
+                            <input type="reset" value="Temizle" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Kaydet" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    
+    <script src="~/colorlib-regform-15/vendor/jquery/jquery.min.js"></script>
+    <script src="~/colorlib-regform-15/js/main.js"></script>
+</body>
+</html>
+
+
+
+

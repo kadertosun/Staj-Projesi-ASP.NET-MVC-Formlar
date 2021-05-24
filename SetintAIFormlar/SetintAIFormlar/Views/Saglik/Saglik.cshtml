@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Saglik";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/colorlib-regform-15/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/colorlib-regform-15/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="~/colorlib-regform-15/images/sag.jpg" alt="">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>Sağlık Kuruluşları Kayıt Formu</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="kurumadi">Kurum Adı :</label>
+                                <input type="text" name="kurumadi" id="kurumadi" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="adresi">Kurum Adresi :</label>
+                                <input type="text" name="adresi" id="adresi" required />
+                            </div>
+
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bolumleri">Bölümleri:</label>
+                                <input type="text" name="bolumleri" id="bolumleri" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="bashekim">Başhekim:</label>
+                                <input type="text" name="bashekim" id="bashekim" required />
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="telefon">Telefon:</label>
+                                <input type="number" name="telefon" id="telefon" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="adsoyad">Sorumlu Ad Soyad:</label>
+                                <input type="text" name="adsoyad" id="adsoyad" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="scep">Sorumlu Telefon:</label>
+                                <input type="number" name="scep" id="scep" />
+                            </div>
+                            <div class="form-group">
+                                <label for="sabit">Sabit Telefon:</label>
+                                <input type="number" name="sabit" id="sabit" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mail">E-posta :</label>
+                                <input type="email" name="mail" id="mail" required />
+                            </div>
+
+                        </div>
+                        <div class="form-submit">
+                            <input type="reset" value="Temizle" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Kaydet" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- JS -->
+    <script src="~/colorlib-regform-15/vendor/jquery/jquery.min.js"></script>
+    <script src="~/colorlib-regform-15/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+

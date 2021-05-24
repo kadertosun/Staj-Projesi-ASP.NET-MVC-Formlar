@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "Hemsire";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/colorlib-regform-15/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/colorlib-regform-15/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="~/colorlib-regform-15/images/req.jpg" alt="">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>Request form for Robot Nurse "Setint" rental</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name :</label>
+                                <input type="text" name="name" id="name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last Name :</label>
+                                <input type="text" name="lastname" id="lastname" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company :</label>
+                                <input type="text" name="company" id="company" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="mail">E-posta :</label>
+                                <input type="email" name="mail" id="mail" required />
+
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="phone">Mobil Phone:</label>
+                                <input type="number" name="phone" id="phone" required />
+
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country :</label>
+                                <input type="text" name="country" id="country" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="city">City :</label>
+                                <input type="text" name="city" id="city" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="adress">Adress:</label>
+                                <input type="text" name="adress" id="adress" required />
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="message">Message :</label>
+                            <textarea type="text" name="message" id="message" required cols="75" rows="10"></textarea>
+                        </div>
+
+
+
+                        <div class="form-submit">
+                            <input type="reset" value="Reset All" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="btn1" />
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="~/colorlib-regform-15/vendor/jquery/jquery.min.js"></script>
+    <script src="~/colorlib-regform-15/js/main.js"></script>
+</body>
+</html>
+
+

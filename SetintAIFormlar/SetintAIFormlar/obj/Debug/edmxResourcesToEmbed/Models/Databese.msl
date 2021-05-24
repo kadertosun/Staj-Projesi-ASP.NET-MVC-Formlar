@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FormModelStoreContainer" CdmEntityContainer="FormEntities">
+    <EntitySetMapping Name="CalistayDb">
+      <EntityTypeMapping TypeName="FormModel.CalistayDb">
+        <MappingFragment StoreEntitySet="CalistayDb">
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="adi" ColumnName="adi" />
+          <ScalarProperty Name="soyadi" ColumnName="soyadi" />
+          <ScalarProperty Name="kurumu" ColumnName="kurumu" />
+          <ScalarProperty Name="gorevi" ColumnName="gorevi" />
+          <ScalarProperty Name="unvani" ColumnName="unvani" />
+          <ScalarProperty Name="katilim" ColumnName="katilim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DoktorDb">
+      <EntityTypeMapping TypeName="FormModel.DoktorDb">
+        <MappingFragment StoreEntitySet="DoktorDb">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+          <ScalarProperty Name="Unvani" ColumnName="Unvani" />
+          <ScalarProperty Name="Kurumu" ColumnName="Kurumu" />
+          <ScalarProperty Name="Gorevi" ColumnName="Gorevi" />
+          <ScalarProperty Name="UzmanlikA" ColumnName="UzmanlikA" />
+          <ScalarProperty Name="SabitT" ColumnName="SabitT" />
+          <ScalarProperty Name="DahiliT" ColumnName="DahiliT" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IletisimDb">
+      <EntityTypeMapping TypeName="FormModel.IletisimDb">
+        <MappingFragment StoreEntitySet="IletisimDb">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="adi" ColumnName="adi" />
+          <ScalarProperty Name="soyadi" ColumnName="soyadi" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="konu" ColumnName="konu" />
+          <ScalarProperty Name="mesaj" ColumnName="mesaj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KurulusDb">
+      <EntityTypeMapping TypeName="FormModel.KurulusDb">
+        <MappingFragment StoreEntitySet="KurulusDb">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="kurumadi" ColumnName="kurumadi" />
+          <ScalarProperty Name="adresi" ColumnName="adresi" />
+          <ScalarProperty Name="bolumleri" ColumnName="bolumleri" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="bashekim" ColumnName="bashekim" />
+          <ScalarProperty Name="adsoyad" ColumnName="adsoyad" />
+          <ScalarProperty Name="scep" ColumnName="scep" />
+          <ScalarProperty Name="sabit" ColumnName="sabit" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RobotDb">
+      <EntityTypeMapping TypeName="FormModel.RobotDb">
+        <MappingFragment StoreEntitySet="RobotDb">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UyeDb">
+      <EntityTypeMapping TypeName="FormModel.UyeDb">
+        <MappingFragment StoreEntitySet="UyeDb">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adi" ColumnName="adi" />
+          <ScalarProperty Name="soyadi" ColumnName="soyadi" />
+          <ScalarProperty Name="kadi" ColumnName="kadi" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="il" ColumnName="il" />
+          <ScalarProperty Name="sdurum" ColumnName="sdurum" />
+          <ScalarProperty Name="dtarihi" ColumnName="dtarihi" />
+          <ScalarProperty Name="uyeliktipi" ColumnName="uyeliktipi" />
+          <ScalarProperty Name="boy" ColumnName="boy" />
+          <ScalarProperty Name="kilo" ColumnName="kilo" />
+          <ScalarProperty Name="fotograf" ColumnName="fotograf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

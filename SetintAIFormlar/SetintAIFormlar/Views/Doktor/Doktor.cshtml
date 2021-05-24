@@ -1,0 +1,189 @@
+﻿
+@{
+    ViewBag.Title = "Doktor";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/colorlib-regform-15/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/colorlib-regform-15/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="~/colorlib-regform-15/images/aa.png" alt="">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>Doktor Kayıt Formu</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="Adi">İsim :</label>
+                                <input type="text" name="Adi" id="Adi" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="Soyadi">Soyisim :</label>
+                                <input type="text" name="Soyadi" id="Soyadi" required />
+                            </div>
+
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="Unvani">Ünvanı:</label>
+                                <select name="Unvani" id="Unvani" required>
+                                    <option value=""></option>
+                                    <option>Prof.Dr.</option>
+                                    <option>Doç.Dr</option>
+                                    <option>Uzman.Dr.</option>
+                                    <option>Opr.Dr.</option>
+                                    <option>Dr.</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="Kurumu">Kurumu :</label>
+                                <input type="text" name="Kurumu" id="Kurumu" required />
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="Gorevi">Görevi :</label>
+                                <input type="text" name="Gorevi" id="Gorevi" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="UzmanlikA">Uzmanlık Alanı:</label>
+                                <div class="form-group">
+                                    <select name="UzmanlikA" id="UzmanlikA" required>
+                                        <option value=""></option>
+                                        <option>Acil Servis</option>
+                                        <option>Akciğer ve Solunum Laboratuvarı</option>
+                                        <option>Ameliyathaneler</option>
+                                        <option>Anestezi ve Reanimasyon</option>
+                                        <option>Anjiyografi</option>
+                                        <option>Ağız ve Diş Sağlığı</option>
+                                        <option>Beslenme ve Diyet</option>
+                                        <option>Beyin,Sinir ve Omurilik Cerahisi</option>
+                                        <option>Biyokimya Laboratuvarı </option>
+                                        <option>Böbrek Hastalıkları</option>
+                                        <option>Cerrahi Yoğun Bakım</option>
+                                        <option>Check Up Merkezi</option>
+                                        <option>Cildiye</option>
+                                        <option>Çocuk Endokrinolojisi</option>
+                                        <option>Çocuk Kardiyoloji</option>
+                                        <option>Çocuk Sağlığı ve Hastalıkları</option>
+                                        <option>Dahiliye</option>
+                                        <option>Damar Yolu Cerrahisi</option>
+                                        <option>Deri Hastaliklari</option>
+                                        <option>Dermatoloji ve Kozmetoloji</option>
+                                        <option>El Cerrahisi ve Mikro Cerrahi</option>
+                                        <option>Endokrinoloji, Diyabet ve Metabolizma Hastalıkları</option>
+                                        <option>Enfeksiyon Hastalıkları ve Klinik Mikrobiyoloji</option>
+                                        <option>Estetik, Plastik ve Rekonstrüktif Cerrahi</option>
+                                        <option>Fizik Tedavi ve Rehabilitasyon</option>
+                                        <option>Gastroenteroloji</option>
+                                        <option>Genel Cerrahi</option>
+                                        <option>Genel Yoğun Bakım Ünitesi</option>
+                                        <option>Genetik Laboratuvarı</option>
+                                        <option>Girişimsel Kardiyoloji</option>
+                                        <option>Girişimsel Nöroloji</option>
+                                        <option>Girişimsel Radyoloji</option>
+                                        <option>Görüntüleme Ünitesi</option>
+                                        <option>Göğüs Cerrahisi</option>
+                                        <option>Göğüs Hastalıkları</option>
+                                        <option>İnme (Felç) Akut Tedavi Ünitesi</option>
+                                        <option>İç Hastalıkları</option>
+                                        <option>Jinekoloji</option>
+                                        <option>Kadın Hastalıkları ve Doğum</option>
+                                        <option>Kalp Hastalıkları</option>
+                                        <option>Kalp ve Damar Cerrahisi</option>
+                                        <option>Kardiyoloji</option>
+                                        <option>Kardiyovasküler</option>
+                                        <option>Kardiyovasküler Cerrahi Yoğun Bakım Ünitesi</option>
+                                        <option>Klinik Laboratuvarlar</option>
+                                        <option>Koroner Yoğun Bakım</option>
+                                        <option>Koroner ve Periferik Anjiyografi</option>
+                                        <option>Kozmetoloji</option>
+                                        <option>Kulak Burun Boğaz Hastalıkları</option>
+                                        <option>Lazer Epilasyon</option>
+                                        <option>Nefroloji</option>
+                                        <option>Nöroanjiyografi (Beyin Anjiyosu)</option>
+                                        <option>Nöroloji</option>
+                                        <option>Nöroşirurji</option>
+                                        <option>Obezite, Diyabet ve Metabolik Cerrahi Merkezi</option>
+                                        <option>Omurga Sorunları Tanı ve Tedavi Merkezi</option>
+                                        <option>Organ Nakli Ünitesi</option>
+                                        <option>Ortopedi ve Travmatoloji</option>
+                                        <option>Pediatri</option>
+                                        <option>Pediatrik Endokrinoloji, Diyabet ve Metabolizma Hastalıkları</option>
+                                        <option>Psikiyatri</option>
+                                        <option>Psikoloji</option>
+                                        <option>Radyoloji</option>
+                                        <option>Romatoloji Bölümü</option>
+                                        <option>Uyku Bozuklukları ve Uyku Laboratuvarı</option>
+                                        <option>Üroloji</option>
+                                        <option>Yenidoğan Yoğun Bakım Ünitesi</option>
+                                        <option>Yoğun Bakım</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="Telefon">Telefon :</label>
+                                <input type="number" name="Telefon" id="Telefon" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="DahiliT">Dahili Telefon:</label>
+                                <input type="number" name="DahiliT" id="DahiliT" />
+                            </div>
+                            <div class="form-group">
+                                <label for="SabitT">Sabit Telefon:</label>
+                                <input type="number" name="SabitT" id="SabitT" />
+                            </div>
+
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="Mail">E-posta :</label>
+                                <input type="email" name="Mail" id="Mail" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="Adres">Adres :</label>
+                                <textarea type="text" name="Adres" id="Adres" required cols="40"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="reset" value="Temizle" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Kaydet" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- JS -->
+    <script src="~/colorlib-regform-15/vendor/jquery/jquery.min.js"></script>
+    <script src="~/colorlib-regform-15/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+
+

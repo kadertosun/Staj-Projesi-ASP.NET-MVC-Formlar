@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FormModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CalistayDb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adi" Type="nchar" MaxLength="50" />
+    <Property Name="soyadi" Type="nchar" MaxLength="50" />
+    <Property Name="kurumu" Type="nchar" MaxLength="20" />
+    <Property Name="gorevi" Type="nchar" MaxLength="20" />
+    <Property Name="unvani" Type="nchar" MaxLength="20" />
+    <Property Name="katilim" Type="nchar" MaxLength="60" />
+    <Property Name="telefon" Type="nchar" MaxLength="20" />
+    <Property Name="mail" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="DoktorDb">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyadi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Unvani" Type="nvarchar" MaxLength="50" />
+    <Property Name="Kurumu" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gorevi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UzmanlikA" Type="nvarchar" MaxLength="50" />
+    <Property Name="SabitT" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="DahiliT" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Adres" Type="nvarchar" MaxLength="50" />
+    <Property Name="Telefon" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="IletisimDb">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="soyadi" Type="nvarchar" MaxLength="50" />
+    <Property Name="mail" Type="nvarchar" MaxLength="50" />
+    <Property Name="telefon" Type="nvarchar" MaxLength="50" />
+    <Property Name="konu" Type="nvarchar" MaxLength="50" />
+    <Property Name="mesaj" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KurulusDb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kurumadi" Type="nvarchar" MaxLength="50" />
+    <Property Name="adresi" Type="nvarchar" MaxLength="50" />
+    <Property Name="bolumleri" Type="nchar" MaxLength="50" />
+    <Property Name="telefon" Type="nchar" MaxLength="20" />
+    <Property Name="bashekim" Type="nvarchar" MaxLength="50" />
+    <Property Name="adsoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="scep" Type="nchar" MaxLength="20" />
+    <Property Name="sabit" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="mail" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RobotDb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="company" Type="nvarchar" MaxLength="50" />
+    <Property Name="lastname" Type="nvarchar" MaxLength="50" />
+    <Property Name="mail" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="country" Type="nvarchar" MaxLength="50" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" />
+    <Property Name="adress" Type="nvarchar" MaxLength="50" />
+    <Property Name="message" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UyeDb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="soyadi" Type="nvarchar" MaxLength="50" />
+    <Property Name="kadi" Type="nvarchar" MaxLength="50" />
+    <Property Name="sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="telefon" Type="nchar" MaxLength="20" />
+    <Property Name="mail" Type="nchar" MaxLength="25" />
+    <Property Name="adres" Type="nvarchar" MaxLength="80" />
+    <Property Name="il" Type="nchar" MaxLength="30" />
+    <Property Name="sdurum" Type="nchar" MaxLength="20" />
+    <Property Name="dtarihi" Type="date" />
+    <Property Name="uyeliktipi" Type="nvarchar" MaxLength="50" />
+    <Property Name="boy" Type="nchar" MaxLength="20" />
+    <Property Name="kilo" Type="nchar" MaxLength="20" />
+    <Property Name="fotograf" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="FormModelStoreContainer">
+    <EntitySet Name="CalistayDb" EntityType="Self.CalistayDb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DoktorDb" EntityType="Self.DoktorDb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IletisimDb" EntityType="Self.IletisimDb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KurulusDb" EntityType="Self.KurulusDb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RobotDb" EntityType="Self.RobotDb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UyeDb" EntityType="Self.UyeDb" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

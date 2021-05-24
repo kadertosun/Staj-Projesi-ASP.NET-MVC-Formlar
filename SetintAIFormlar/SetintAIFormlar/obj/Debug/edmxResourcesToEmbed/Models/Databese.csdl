@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FormModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CalistayDb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adi" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="soyadi" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="kurumu" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="gorevi" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="unvani" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="katilim" Type="String" MaxLength="60" FixedLength="true" Unicode="true" />
+    <Property Name="telefon" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="mail" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DoktorDb">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Unvani" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Kurumu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gorevi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UzmanlikA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SabitT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="DahiliT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Adres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="IletisimDb">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soyadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="konu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mesaj" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="KurulusDb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kurumadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="adresi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="bolumleri" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="telefon" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="bashekim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="adsoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="scep" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="sabit" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="mail" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="RobotDb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="adress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="message" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UyeDb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soyadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="telefon" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="mail" Type="String" MaxLength="25" FixedLength="true" Unicode="true" />
+    <Property Name="adres" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="il" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="sdurum" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="dtarihi" Type="DateTime" Precision="0" />
+    <Property Name="uyeliktipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="boy" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="kilo" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="fotograf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="FormEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CalistayDb" EntityType="Self.CalistayDb" />
+    <EntitySet Name="DoktorDb" EntityType="Self.DoktorDb" />
+    <EntitySet Name="IletisimDb" EntityType="Self.IletisimDb" />
+    <EntitySet Name="KurulusDb" EntityType="Self.KurulusDb" />
+    <EntitySet Name="RobotDb" EntityType="Self.RobotDb" />
+    <EntitySet Name="UyeDb" EntityType="Self.UyeDb" />
+  </EntityContainer>
+</Schema>
